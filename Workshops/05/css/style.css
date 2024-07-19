@@ -1,0 +1,60 @@
+.d-flex {
+    display: flex;
+}
+
+/* no bullet points */
+ul {
+    list-style-type: none;
+    justify-content: center;
+    gap: 20px;
+}
+
+ul li {
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul:nth-child(1) {
+    flex-wrap: wrap-reverse;
+}
+nav ul:nth-child(2) {
+    flex-wrap: wrap;
+}
+
+.img-container {
+    display: flex;
+    min-height: 350px;
+    justify-content: center;
+    gap: 5px;
+    img{
+        border: 1px solid black;
+    }
+
+    div:nth-child(even){
+        align-self: flex-end;
+    }
+}
+
+
+
+.img-container div{
+    margin: 20px 0;
+}
+
+.img-container {
+    background-color: rgba(211, 211, 211, 0.173);
+}
+
+.discord-logo {
+    background-color: bisque;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

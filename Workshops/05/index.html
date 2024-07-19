@@ -5,62 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display Flex</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="reset.css">
-    <style>
-        .d-flex {
-            display: flex;
-        }
-        
-        /* no bullet points */
-        ul {
-            list-style-type: none;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        nav ul:nth-child(1) {
-            flex-wrap: wrap-reverse;
-        }
-        nav ul:nth-child(2) {
-            flex-wrap: wrap;
-        }
-
-        .img-container {
-            display: flex;
-            min-height: 350px;
-            justify-content: center;
-            gap: 5px;
-            img{
-                border: 1px solid black;
-            }
-
-            div:nth-child(even){
-                align-self: flex-end;
-            }
-        }
-
-     
-
-        .img-container div{
-            margin: 20px 0;
-        }
-
-        .img-container {
-            background-color: rgba(211, 211, 211, 0.173);
-        }
-    </style>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <!-- nav>ul>li*10{Nav $} -->
     <nav>
         <ul class="d-flex">
-            <li><i class="fa-solid fa-mug-saucer"></i>Nav 1</li>
+            <li><i class="fa-solid fa-mug-saucer"></i> Nav 1</li>
             <li>Nav 2</li>
             <li>Nav 3</li>
             <li>Nav 4</li>
@@ -83,6 +36,8 @@
         <div><img src="https://picsum.photos/200/300?random=4" alt=""></div>
     </div>
 
-    <img src="../../disord.svg" alt="">
+    <div class="discord-logo d-flex">
+        <img src="./images/disord.svg" alt="Discord logo">
+    </div>
 </body>
 </html>
