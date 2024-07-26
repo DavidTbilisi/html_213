@@ -24,6 +24,8 @@ body {
     background-image: url('./images/cat.svg');
     background-repeat: no-repeat;
     background-size: 8120px 297px; 
+    /* total_frames = total_width / frame_width */
+    /* total_frames = 8120px / 507.5px = 16 frames */
     animation: catWalk 1.2s steps(16, end) infinite;
     margin-top: 2em;
 }
