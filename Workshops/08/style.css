@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    position: relative;
+    background: linear-gradient(180deg, rgb(0, 0, 0) 50%, rgb(1, 27, 47) 100%);
+    height: 100vh;
+}
+
+#buildings {
+    width: 100%;
+    height: 294px;
+    background-image: url('./images/buildings.svg'), linear-gradient(180deg, rgba(8,62,73,1) 0%, rgba(0,212,255,1) 100%);
+    animation: moveBuildings 75s linear infinite;
+}
+
+#cat {
+    position: absolute;
+    top:-10px;
+    width: 507.5px;
+    height: 297px; 
+    background-image: url('./images/cat.svg');
+    background-repeat: no-repeat;
+    background-size: 8120px 297px; 
+    animation: catWalk 1.2s steps(16, end) infinite;
+    margin-top: 2em;
+}
+
+@keyframes moveBuildings {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+@keyframes catWalk {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -8039px 0; /* 16 frames * 507.5px */
+        /* n frames * cat container width */
+    }
+}
