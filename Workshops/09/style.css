@@ -1,0 +1,88 @@
+:root {
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+    --prime-color: #00B8D9;
+    --second-color: #00A0BD;
+    --third-color: #008DA6;
+    --accent-color: #007E94;
+}
+
+body {
+    background-color: var(--third-color);
+}
+
+
+.page-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100vh;
+}
+
+
+h1 {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+
+    transition: all .3s ease;
+}
+
+h1:hover {
+    color: var(--prime-color);
+    text-shadow: 1px 1px 1px 1px black;
+}
+
+h1:click
+
+h2 {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    color: white;
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+
+    header {
+        width: 100%;
+    }
+    .summary {
+        width: 50%;
+    }
+
+    .preamble {
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .intro {
+        display: flex;
+        flex-wrap: wrap;
+    
+        header {
+            width: 100%;
+        }
+        .summary {
+            width: 100%;
+        }
+    
+        .preamble {
+            width: 100%;
+        }
+    }
+}
